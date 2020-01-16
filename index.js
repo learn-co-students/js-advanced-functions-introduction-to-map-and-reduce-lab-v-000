@@ -44,6 +44,7 @@ function reduceToAllTrue(arr){
   }, 0)
 }
 
+//reduce returns a single value from the array it is operating on
 function reduceToAnyTrue(arr){
   return arr.reduce(function(start, current){
    return Boolean(current) == true ? true : false;
