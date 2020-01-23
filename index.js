@@ -1,3 +1,5 @@
+// Map Functions
+
 function mapToNegativize(sourceArray) {
   let newArray = [];
   for (const el of sourceArray) {
@@ -31,9 +33,10 @@ function mapToSquare(sourceArray) {
 };
 
 
-function reduceToTotal(sourceArray, startingPoint) {
-  let total;
-  startingPoint ? total = startingPoint : total = 0;
+// Reduce Functions
+
+function reduceToTotal(sourceArray, startingPoint = 0) {
+  let total = startingPoint;
   for (const el of sourceArray) {
     total += el;
   }
@@ -48,6 +51,15 @@ function reduceToAllTrue(sourceArray) {
   return bool;
 };
 
+// Alternate Solution
+
+// function reduceToAllTrue(sourceArray) {
+//   for (const el of sourceArray) {
+//     if (!el) return false;
+//   }
+//   return true;
+// };
+
 function reduceToAnyTrue(sourceArray) {
   let bool = false;
   for (const el of sourceArray) {
@@ -55,3 +67,12 @@ function reduceToAnyTrue(sourceArray) {
   }
   return bool;
 };
+
+// Alternate Solution
+
+// function reduceToAnyTrue(sourceArray) {
+//   for (const el of sourceArray) {
+//     if (el) return true;
+//   }
+//   return false;
+// };
