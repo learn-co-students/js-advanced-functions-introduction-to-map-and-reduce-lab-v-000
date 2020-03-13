@@ -60,12 +60,7 @@ function reduceToAllTrue(sourceArray){
 }
 
 function reduceToAnyTrue(sourceArr) {
-
-    for (let i = 0; i < sourceArr.length; ++i) {
-        if (sourceArr[i] === true) {
-            return true
-        }
-    }
+    for (let i = 0; i < sourceArr.length; ++i) { if (sourceArr[i] === true) { return true} }
     return false
 }
 
