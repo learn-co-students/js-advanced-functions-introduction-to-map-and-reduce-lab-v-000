@@ -56,7 +56,7 @@ function mapToSquare(arr){
   UPDATE: That's not the case for each function.
 */
 
-function reduceToTotal(array, aggregate = 0) {
+function reduceToTotal(array, aggregate = 0) { // If I don't want to update the aggregate, let total = aggregate.
   for(const num of array) {
     aggregate += num;
   }
@@ -72,7 +72,7 @@ function reduceToAllTrue(sourceArray) {
 
 function reduceToAnyTrue(sourceArray) {
   for(const elem of sourceArray) {
-    if (!!elem) { return true; }
+    if (!!elem) { return true; } // Next time, just use if (elem) - it's the same thing!
   }
   return false;
 }
