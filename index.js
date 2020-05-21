@@ -41,12 +41,12 @@ function mapToSquare(sourceArray) {
 }
 
 function reduceToTotal(sourceArray, startingPoint) {
-    let runningTotal = [] 
+    //let runningTotal = [] 
     console.log(runningTotal, "Blank running Total") // [] Blank running Total
     for (let i = 0; i < sourceArray.length; i++) {
         let runningTotal = (sourceArray, startingPoint) => sourceArray + startingPoint;
         console.log(startingPoint, "startingPoint") //100 startingPoint
-        console.log(runningTotal, "Accumulated running Total")
+        console.log(runningTotal, "Accumulated running Total") // [Function: _runningTotal] Accumulated running Total
         return (sourceArray.reduce(runningTotal))
         // return (sourceArray.reduce(startingPoint))
     }
