@@ -56,8 +56,6 @@ function reduceToAllTrue(sourceArray) {
         runningTotal = sourceArray[i]
         return true
         
-    }
-    
 
 }
     // let runningTotal = []
