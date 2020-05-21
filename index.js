@@ -49,6 +49,17 @@ function reduceToTotal(sourceArray, startingPoint = 0) {
 }
  
 function reduceToAllTrue(sourceArray) {
+    console.log(sourceArray, "sourceArray")
+    let runningTotal = sourceArray
+    console.log(runningTotal, "runningTotal")
+    for (let i = 0; i < sourceArray.length; i++) {
+        runningTotal = sourceArray[i]
+        return true
+        
+    }
+    
+
+}
     // let runningTotal = []
     // for (let i = 0; i < sourceArray.length; i++) {
     //     let runningTotal = (sourceArray, runningTotal) => sourceArray + runningTotal;
