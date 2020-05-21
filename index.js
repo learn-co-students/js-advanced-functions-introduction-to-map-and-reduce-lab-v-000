@@ -61,5 +61,11 @@ function reduceToAllTrue(sourceArray) {
 }
 
 function reduceToAnyTrue(sourceArray) {
-
+    for (let i = 0; i < sourceArray.length; i++) {
+        if (sourceArray[i]) {
+            return true
+        }
+        
+    }
+    return false
 }
