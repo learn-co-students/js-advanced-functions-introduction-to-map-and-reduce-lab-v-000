@@ -53,6 +53,7 @@ function reduceToAllTrue(sourceArray) {
     let runningTotal = sourceArray
     console.log(runningTotal, "runningTotal")
     for (let i = 0; i < sourceArray.length; i++) {
+        runningTotal.push(sourceArray[i])
         if (runningTotal == sourceArray[i]) {
             return true
         } else {
