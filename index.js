@@ -10,7 +10,7 @@ function mapToNegativize(sourceArray) {
     let negativize = []
     for (let i = 0; i < sourceArray.length; i++) {
         // negativize.push(sourceArray[i] * -1)
-        negativize = (sourceArray[i] * -1)
+        negativize.push(sourceArray[i] * -1)
     }
     return negativize
 }
@@ -41,11 +41,32 @@ function mapToSquare(sourceArray) {
 }
 
 function reduceToTotal(sourceArray, startingPoint) {
-
+    let runningTotal = [] 
+    console.log(runningTotal, "Blank running Total") // [] Blank running Total
+    for (let i = 0; i < sourceArray.length; i++) {
+        let runningTotal = (sourceArray, startingPoint) => sourceArray + startingPoint;
+        console.log(startingPoint, "startingPoint") //100 startingPoint
+        console.log(runningTotal, "Accumulated running Total")
+        return (sourceArray.reduce(runningTotal))
+        // return (sourceArray.reduce(startingPoint))
+    }
 }
-
+ 
 function reduceToAllTrue(sourceArray) {
+    // let runningTotal = []
+    // for (let i = 0; i < sourceArray.length; i++) {
+    //     let runningTotal = (sourceArray, runningTotal) => sourceArray + runningTotal;
+    //     console.log(runningTotal, "running Total") // [Function: _runningTotal2] running Total
+    //     console.log(sourceArray, "source Array") // [ 1, 2, true, 'razmatazz' ] source Array
+    //     return (sourceArray.reduce(runningTotal))
+    // }
 
+    
+    // console.log(sourceArray, "Original Source Array") [ 1, 2, true, 'razmatazz' ] Original Source Array
+    // let runningTotal = (sourceArray, runningTotal) => sourceArray + runningTotal;
+    // console.log(sourceArray, "Second Source Array") // [ 1, 2, true, 'razmatazz' ] Original Source Array
+    // console.loog(runningTotal, "Running Total")
+    // return (sourceArray.reduce(runningTotal))
 }
 
 function reduceToAnyTrue(sourceArray) {
