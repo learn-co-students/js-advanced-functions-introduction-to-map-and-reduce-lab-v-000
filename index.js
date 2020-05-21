@@ -1,15 +1,23 @@
 // Your code here
+// function mapToNegativize(sourceArray) {
+//         var negativize = sourceArray.map(function(num) {
+//         return num * -1
+//     }) 
+//     return negativize
+// }
+
 function mapToNegativize(sourceArray) {
-    let negativize = [];
+    let negativize = []
     for (let i = 0; i < sourceArray.length; i++) {
-        negativize.push(sourceArray[i] * -1);
+        // negativize.push(sourceArray[i] * -1)
+        negativize = (sourceArray[i] * -1)
     }
     return negativize
 }
 
 
 function mapToNoChange(sourceArray) {
-    let originally = [];
+    let originally = []
     for (let i = 0; i < sourceArray.length; i++) {
         originally.push(sourceArray[i]);
     }
@@ -17,25 +25,22 @@ function mapToNoChange(sourceArray) {
 }
 
 function mapToDouble(sourceArray) {
-    let double = [];
+    let double = []
     for (let i = 0; i < sourceArray.length; i++) {
-        double.push(sourceArray[i] * 2);
+        double.push(sourceArray[i] * 2)
     }
     return double
 }
 
 function mapToSquare(sourceArray) {
-    let square = [];
+    let square = []
     for (let i = 0; i < sourceArray.length; i++) {
-        square.push(sourceArray[i] ** 2);
+        square.push(sourceArray[i] ** 2)        
     }
     return square
 }
 
 function reduceToTotal(sourceArray, startingPoint) {
-    console.log(sourceArray)
-    console.log(startingPoint)
-
 
 }
 
