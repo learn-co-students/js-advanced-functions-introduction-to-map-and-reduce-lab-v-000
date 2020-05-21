@@ -53,25 +53,12 @@ function reduceToAllTrue(sourceArray) {
     let runningTotal = sourceArray
     console.log(runningTotal, "runningTotal")
     for (let i = 0; i < sourceArray.length; i++) {
-        runningTotal = sourceArray[i]
-        return true
-        
-
-}
-    // let runningTotal = []
-    // for (let i = 0; i < sourceArray.length; i++) {
-    //     let runningTotal = (sourceArray, runningTotal) => sourceArray + runningTotal;
-    //     console.log(runningTotal, "running Total") // [Function: _runningTotal2] running Total
-    //     console.log(sourceArray, "source Array") // [ 1, 2, true, 'razmatazz' ] source Array
-    //     return (sourceArray.reduce(runningTotal))
-    // }
-
-    
-    // console.log(sourceArray, "Original Source Array") [ 1, 2, true, 'razmatazz' ] Original Source Array
-    // let runningTotal = (sourceArray, runningTotal) => sourceArray + runningTotal;
-    // console.log(sourceArray, "Second Source Array") // [ 1, 2, true, 'razmatazz' ] Original Source Array
-    // console.loog(runningTotal, "Running Total")
-    // return (sourceArray.reduce(runningTotal))
+        if (runningTotal == sourceArray[i]) {
+            return true
+        } else {
+            return false
+        }
+    }
 }
 
 function reduceToAnyTrue(sourceArray) {
