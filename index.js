@@ -49,17 +49,15 @@ function reduceToTotal(sourceArray, startingPoint = 0) {
 }
  
 function reduceToAllTrue(sourceArray) {
-    console.log(sourceArray, "sourceArray")
-    let runningTotal = sourceArray
-    console.log(runningTotal, "runningTotal")
     for (let i = 0; i < sourceArray.length; i++) {
-        runningTotal.push(sourceArray[i])
-        if (runningTotal == sourceArray[i]) {
-            return true
-        } else {
-            return false
-        }
+        // if one value in array is NOT truthy
+        if (!sourceArray[i]) {
+            // return false
+            return false 
+        }        
     }
+    // if all values in array ARE truthy
+    return true
 }
 
 function reduceToAnyTrue(sourceArray) {
