@@ -34,13 +34,30 @@ function mapToSquare(ary){
   return new_ary;
 }
 
-function reduceToTotal(ary, initialValue){
-  return ary.reduce( (acc, cur)=> acc+cur, !!initialValue?initialValue:0 );
+// function reduceToTotal(ary, initialValue){
+//   return ary.reduce( (acc, cur)=> acc+cur, !!initialValue?initialValue:0 );
+// }
+function reduceToTotal(ary,initialValue){
+  let accu =!!initialValue?initialValue:0;
+  ary.forEach(elem=>accu+=elem);
+  return accu;
 }
 
+// function reduceToAllTrue(ary){
+//   return ary.reduce((acc, cur)=>!!acc&&!!cur)
+// }
 function reduceToAllTrue(ary){
-  return ary.reduce((acc, cur)=>!!acc&&!!cur)
+  console.log(ary);
+  let accu=true;
+   ary.forEach(elem=> accu= accu&&Boolean(elem));
+  return accu;
 }
+
+// function reduceToAnyTrue(ary){
+//   return ary.reduce((acc, cur)=>!!acc||!!cur)
+// }
 function reduceToAnyTrue(ary){
-  return ary.reduce((acc, cur)=>!!acc||!!cur)
+  let accu=false;
+   ary.forEach(elem=> accu= accu||Boolean(elem));
+  return accu;
 }
