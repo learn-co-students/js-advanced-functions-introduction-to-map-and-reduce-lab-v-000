@@ -31,9 +31,15 @@ function mapToSquare(src) {
     return r
 }
 
-function reduceToTotal(src) {
+function reduceToTotal(memo, currentValue=0) {
     // let t = []
     for (let i = 0; i< src.length; i++) {
-    return i
+    return currentValue + memo[i]
     }
 }
+
+// Reduce
+// 10 + 20 = 30 + 30 = 60 + 40 = 100
+// [10, 20, 30, 40].reduce(function (memo, i) { return memo + i }) //=> 100
+
+// callback(accumulator, currentValue) => accumulator + currentValue;
