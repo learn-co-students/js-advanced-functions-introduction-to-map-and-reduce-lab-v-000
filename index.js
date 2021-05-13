@@ -9,7 +9,7 @@ function mapToNoChange(arr){ return [...arr] }
 
 function mapToDouble(arr){
   const newValues = []
-  for (let i of arr){ newValues.push(i * 2) }
+  for (let i of arr){ newValues.push(2 * i) }
   return newValues
 }
 
@@ -34,9 +34,5 @@ function reduceToAllTrue(arr){
 function reduceToAnyTrue(arr){
   for (let i of arr){ if (i){ return true } }
   return false
-}
-
-function mapToDouble(){
-
 }
 

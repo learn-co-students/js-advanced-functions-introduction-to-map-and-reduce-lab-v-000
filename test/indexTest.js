@@ -11,12 +11,11 @@ describe('my own map-like methods', function() {
     })
   })
 
-  // xdescribe("mapToDouble returns an array with the original values multiplied by 2", function() {
-  //   it("transforms correctly", function(){
-  //     expect(mapToDouble([1, 2, 3, -9])).to.eql([2, 4, 6, -18])
-  //     //This test should not be failing but something is up
-  //   })
-  // })
+  describe("mapToDouble returns an array with the original values multiplied by 2", function() {
+    it("transforms correctly", function(){
+      expect(mapToDouble([1, 2, 3, -9])).to.eql([2, 4, 6, -18])
+    })
+  })
 
 
   describe("mapToSquare returns an array with the original values squared", function() {
